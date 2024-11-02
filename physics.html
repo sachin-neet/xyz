@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Chapters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Physics - Select a Chapter</h1>
+    </header>
+
+    <section class="chapters">
+        <ul>
+                <li><a href="mcq.html?subject=physics&chapter=physical_world_and_measurement">Physical World and Measurement</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=kinematics">Kinematics</a></li>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Quiz - Kinematics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .explanation {
+            display: none;
+            color: red;
+            margin-top: 10px;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEET Quiz - Kinematics</h1>
+    </header>
+
+    <section class="chapters">
+        <h2>Kinematics</h2>
+        
+        <div class="question" id="question1">
+            <p>1. What is the formula for displacement in uniform motion?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> Displacement = Speed × Time</label><br>
+                <label><input type="radio" name="q1" value="1"> Displacement = Distance × Time</label><br>
+                <label><input type="radio" name="q1" value="2"> Displacement = Acceleration × Time</label><br>
+                <label><input type="radio" name="q1" value="3"> Displacement = Velocity × Time</label>
+            </div>
+            <button onclick="checkAnswer('q1', 0)">Submit</button>
+            <p class="explanation" id="explanation1">Explanation: Displacement in uniform motion is calculated using the formula Displacement = Speed × Time.</p>
+        </div>
+
+        <div class="question" id="question2">
+            <p>2. What is the SI unit of acceleration?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> m/s<sup>2</sup></label><br>
+                <label><input type="radio" name="q2" value="1"> m/s</label><br>
+                <label><input type="radio" name="q2" value="2"> km/h</label><br>
+                <label><input type="radio" name="q2" value="3"> m</label>
+            </div>
+            <button onclick="checkAnswer('q2', 0)">Submit</button>
+            <p class="explanation" id="explanation2">Explanation: The SI unit of acceleration is meters per second squared (m/s<sup>2</sup>).</p>
+        </div>
+
+        <div class="question" id="question3">
+            <p>3. What is the formula for average velocity?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="0"> Average Velocity = Total Displacement / Total Time</label><br>
+                <label><input type="radio" name="q3" value="1"> Average Velocity = Total Distance / Total Time</label><br>
+                <label><input type="radio" name="q3" value="2"> Average Velocity = Initial Velocity + Final Velocity</label><br>
+                <label><input type="radio" name="q3" value="3"> Average Velocity = Speed / Time</label>
+            </div>
+            <button onclick="checkAnswer('q3', 0)">Submit</button>
+            <p class="explanation" id="explanation3">Explanation: Average velocity is calculated as Total Displacement divided by Total Time.</p>
+        </div>
+
+        <div class="question" id="question4">
+            <p>4. What does the slope of a distance-time graph represent?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="0"> Velocity</label><br>
+                <label><input type="radio" name="q4" value="1"> Acceleration</label><br>
+                <label><input type="radio" name="q4" value="2"> Displacement</label><br>
+                <label><input type="radio" name="q4" value="3"> Speed</label>
+            </div>
+            <button onclick="checkAnswer('q4', 0)">Submit</button>
+            <p class="explanation" id="explanation4">Explanation: The slope of a distance-time graph represents the velocity of the object.</p>
+        </div>
+
+        <div class="question" id="question5">
+            <p>5. Which of the following quantities is a vector?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="0"> Speed</label><br>
+                <label><input type="radio" name="q5" value="1"> Distance</label><br>
+                <label><input type="radio" name="q5" value="2"> Velocity</label><br>
+                <label><input type="radio" name="q5" value="3"> Time</label>
+            </div>
+            <button onclick="checkAnswer('q5', 2)">Submit</button>
+            <p class="explanation" id="explanation5">Explanation: Velocity is a vector quantity as it has both magnitude and direction.</p>
+        </div>
+
+        <div class="question" id="question6">
+            <p>6. An object moving with uniform acceleration has its velocity:</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="0"> Constant</label><br>
+                <label><input type="radio" name="q6" value="1"> Increasing</label><br>
+                <label><input type="radio" name="q6" value="2"> Decreasing</label><br>
+                <label><input type="radio" name="q6" value="3"> Random</label>
+            </div>
+            <button onclick="checkAnswer('q6', 1)">Submit</button>
+            <p class="explanation" id="explanation6">Explanation: In uniform acceleration, the velocity of the object is increasing at a constant rate.</p>
+        </div>
+
+        <div class="question" id="question7">
+            <p>7. The area under a velocity-time graph represents:</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="0"> Acceleration</label><br>
+                <label><input type="radio" name="q7" value="1"> Displacement</label><br>
+                <label><input type="radio" name="q7" value="2"> Velocity</label><br>
+                <label><input type="radio" name="q7" value="3"> Time</label>
+            </div>
+            <button onclick="checkAnswer('q7', 1)">Submit</button>
+            <p class="explanation" id="explanation7">Explanation: The area under a velocity-time graph represents the displacement of the object.</p>
+        </div>
+
+        <div class="question" id="question8">
+            <p>8. If an object travels equal distances in equal intervals of time, it is said to be:</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="0"> In uniform motion</label><br>
+                <label><input type="radio" name="q8" value="1"> In accelerated motion</label><br>
+                <label><input type="radio" name="q8" value="2"> In variable motion</label><br>
+                <label><input type="radio" name="q8" value="3"> At rest</label>
+            </div>
+            <button onclick="checkAnswer('q8', 0)">Submit</button>
+            <p class="explanation" id="explanation8">Explanation: An object is in uniform motion if it travels equal distances in equal intervals of time.</p>
+        </div>
+
+        <div class="question" id="question9">
+            <p>9. The initial velocity of an object is represented by:</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="0"> u</label><br>
+                <label><input type="radio" name="q9" value="1"> v</label><br>
+                <label><input type="radio" name="q9" value="2"> a</label><br>
+                <label><input type="radio" name="q9" value="3"> s</label>
+            </div>
+            <button onclick="checkAnswer('q9', 0)">Submit</button>
+            <p class="explanation" id="explanation9">Explanation: The initial velocity of an object is represented by the symbol "u".</p>
+        </div>
+
+        <div class="question" id="question10">
+            <p>10. What is the equation of motion for an object under uniform acceleration?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="0"> v = u + at</label><br>
+                <label><input type="radio" name="q10" value="1"> s = ut + 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q10" value="2"> v<sup>2</sup> = u<sup>2</sup> + 2as</label><br>
+                <label><input type="radio" name="q10" value="3"> All of the above</label>
+            </div>
+            <button onclick="checkAnswer('q10', 3)">Submit</button>
+            <p class="explanation" id="explanation10">Explanation: All three equations of motion apply to an object under uniform acceleration.</p>
+        </div>
+
+        <div class="question" id="question11">
+            <p>11. An object thrown vertically upwards will:</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="0"> Eventually come to rest</label><br>
+                <label><input type="radio" name="q11" value="1"> Move indefinitely upwards</label><br>
+                <label><input type="radio" name="q11" value="2"> Accelerate as it moves</label><br>
+                <label><input type="radio" name="q11" value="3"> Move horizontally</label>
+            </div>
+            <button onclick="checkAnswer('q11', 0)">Submit</button>
+            <p class="explanation" id="explanation11">Explanation: An object thrown upwards will eventually come to rest at its highest point due to the force of gravity.</p>
+        </div>
+
+        <div class="question" id="question12">
+            <p>12. The time taken to reach the maximum height of a projectile is:</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="0"> Equal to the time of descent</label><br>
+                <label><input type="radio" name="q12" value="1"> Half of the total time</label><br>
+                <label><input type="radio" name="q12" value="2"> Greater than the time of descent</label><br>
+                <label><input type="radio" name="q12" value="3"> Less than the time of descent</label>
+            </div>
+            <button onclick="checkAnswer('q12', 0)">Submit</button>
+            <p class="explanation" id="explanation12">Explanation: The time taken to reach maximum height is equal to the time taken to descend back to the original level.</p>
+        </div>
+
+        <div class="question" id="question13">
+            <p>13. The horizontal motion of a projectile is:</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="0"> Uniform</label><br>
+                <label><input type="radio" name="q13" value="1"> Non-uniform</label><br>
+                <label><input type="radio" name="q13" value="2"> Zero</label><br>
+                <label><input type="radio" name="q13" value="3"> Accelerated</label>
+            </div>
+            <button onclick="checkAnswer('q13', 0)">Submit</button>
+            <p class="explanation" id="explanation13">Explanation: The horizontal motion of a projectile is uniform since there is no horizontal acceleration.</p>
+        </div>
+
+        <div class="question" id="question14">
+            <p>14. What is the maximum height reached by a projectile?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="0"> Where vertical velocity becomes zero</label><br>
+                <label><input type="radio" name="q14" value="1"> When horizontal velocity is zero</label><br>
+                <label><input type="radio" name="q14" value="2"> Halfway in its trajectory</label><br>
+                <label><input type="radio" name="q14" value="3"> When it returns to the ground</label>
+            </div>
+            <button onclick="checkAnswer('q14', 0)">Submit</button>
+            <p class="explanation" id="explanation14">Explanation: The maximum height is reached when the vertical velocity becomes zero.</p>
+        </div>
+
+        <div class="question" id="question15">
+            <p>15. The term "displacement" refers to:</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="0"> The total path length</label><br>
+                <label><input type="radio" name="q15" value="1"> The straight line distance from the initial to the final position</label><br>
+                <label><input type="radio" name="q15" value="2"> The distance covered in a particular time</label><br>
+                <label><input type="radio" name="q15" value="3"> The distance minus the speed</label>
+            </div>
+            <button onclick="checkAnswer('q15', 1)">Submit</button>
+            <p class="explanation" id="explanation15">Explanation: Displacement refers to the straight-line distance from the initial to the final position, taking direction into account.</p>
+        </div>
+
+        <div class="question" id="question16">
+            <p>16. If an object is at rest, its velocity is:</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="0"> Zero</label><br>
+                <label><input type="radio" name="q16" value="1"> Constant</label><br>
+                <label><input type="radio" name="q16" value="2"> Increasing</label><br>
+                <label><input type="radio" name="q16" value="3"> Decreasing</label>
+            </div>
+            <button onclick="checkAnswer('q16', 0)">Submit</button>
+            <p class="explanation" id="explanation16">Explanation: If an object is at rest, its velocity is zero.</p>
+        </div>
+
+        <div class="question" id="question17">
+            <p>17. In projectile motion, the only force acting on the object is:</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="0"> Air resistance</label><br>
+                <label><input type="radio" name="q17" value="1"> Gravity</label><br>
+                <label><input type="radio" name="q17" value="2"> Tension</label><br>
+                <label><input type="radio" name="q17" value="3"> Friction</label>
+            </div>
+            <button onclick="checkAnswer('q17', 1)">Submit</button>
+            <p class="explanation" id="explanation17">Explanation: In projectile motion, the only force acting on the object is gravity.</p>
+        </div>
+
+        <div class="question" id="question18">
+            <p>18. The total time of flight of a projectile is determined by:</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="0"> Initial velocity</label><br>
+                <label><input type="radio" name="q18" value="1"> Angle of projection</label><br>
+                <label><input type="radio" name="q18" value="2"> Both initial velocity and angle of projection</label><br>
+                <label><input type="radio" name="q18" value="3"> The height reached</label>
+            </div>
+            <button onclick="checkAnswer('q18', 2)">Submit</button>
+            <p class="explanation" id="explanation18">Explanation: The total time of flight is determined by both the initial velocity and the angle of projection.</p>
+        </div>
+
+        <div class="question" id="question19">
+            <p>19. An object falls freely under the influence of gravity. Its acceleration is:</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="0"> Constant</label><br>
+                <label><input type="radio" name="q19" value="1"> Increasing</label><br>
+                <label><input type="radio" name="q19" value="2"> Decreasing</label><br>
+                <label><input type="radio" name="q19" value="3"> Zero</label>
+            </div>
+            <button onclick="checkAnswer('q19', 0)">Submit</button>
+            <p class="explanation" id="explanation19">Explanation: The acceleration of an object falling freely under the influence of gravity is constant (approximately 9.81 m/s<sup>2</sup>).</p>
+        </div>
+
+        <div class="question" id="question20">
+            <p>20. The distance traveled by an object under uniform acceleration is given by:</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="0"> s = ut + 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q20" value="1"> s = vt - 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q20" value="2"> s = 1/2(v + u)t</label><br>
+                <label><input type="radio" name="q20" value="3"> All of the above</label>
+            </div>
+            <button onclick="checkAnswer('q20', 3)">Submit</button>
+            <p class="explanation" id="explanation20">Explanation: All three equations can be used to calculate the distance traveled by an object under uniform acceleration.</p>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(question, correctValue) {
+            const options = document.getElementsByName(question);
+            const explanation = document.getElementById("explanation" + question.slice(-2));
+            let selectedValue = -1;
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].checked) {
+                    selectedValue = options[i].value;
+                    break;
+                }
+            }
+            if (selectedValue == correctValue) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect. " + explanation.innerText);
+            }
+        }
+    </script>
+</body>
+</html>
+
+                <li><a href="mcq.html?subject=physics&chapter=laws_of_motion">Laws of Motion</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=work_energy_power">Work, Energy, and Power</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=motion_of_system_of_particles_and_rigid_body">Motion of System of Particles and Rigid Body</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=gravitation">Gravitation</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=properties_of_bulk_matter">Properties of Bulk Matter</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=thermodynamics">Thermodynamics</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=behavior_of_perfect_gas_and_kinetic_theory">Behavior of Perfect Gas and Kinetic Theory</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=oscillations_and_waves">Oscillations and Waves</a></li>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Quiz</title>
+    <style>
+        .quiz-container {
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <h1>Physics Chapter List</h1>
+    <button onclick="showKinematicsQuiz()">Kinematics</button>
+
+    <div id="kinematics-quiz" class="quiz-container">
+        <div class="question" id="question1">
+            <p>1. What is the formula for displacement in uniform motion?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> Displacement = Speed × Time</label><br>
+                <label><input type="radio" name="q1" value="1"> Displacement = Distance × Time</label><br>
+                <label><input type="radio" name="q1" value="2"> Displacement = Acceleration × Time</label><br>
+                <label><input type="radio" name="q1" value="3"> Displacement = Velocity × Time</label>
+            </div>
+            <button onclick="checkAnswer('q1', 0)">Submit</button>
+            <p class="explanation" id="explanation1">Explanation: Displacement in uniform motion is calculated using the formula Displacement = Speed × Time.</p>
+        </div>
+
+        <div class="question" id="question2">
+            <p>2. What is the SI unit of acceleration?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> m/s<sup>2</sup></label><br>
+                <label><input type="radio" name="q2" value="1"> m/s</label><br>
+                <label><input type="radio" name="q2" value="2"> km/h</label><br>
+                <label><input type="radio" name="q2" value="3"> m</label>
+            </div>
+            <button onclick="checkAnswer('q2', 0)">Submit</button>
+            <p class="explanation" id="explanation2">Explanation: The SI unit of acceleration is meters per second squared (m/s<sup>2</sup>).</p>
+        </div>
+
+        <div class="question" id="question3">
+            <p>3. What is the formula for average velocity?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="0"> Average Velocity = Total Displacement / Total Time</label><br>
+                <label><input type="radio" name="q3" value="1"> Average Velocity = Total Distance / Total Time</label><br>
+                <label><input type="radio" name="q3" value="2"> Average Velocity = Initial Velocity + Final Velocity</label><br>
+                <label><input type="radio" name="q3" value="3"> Average Velocity = Speed / Time</label>
+            </div>
+            <button onclick="checkAnswer('q3', 0)">Submit</button>
+            <p class="explanation" id="explanation3">Explanation: Average velocity is calculated as Total Displacement divided by Total Time.</p>
+        </div>
+
+        <div class="question" id="question4">
+            <p>4. What does the slope of a distance-time graph represent?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="0"> Velocity</label><br>
+                <label><input type="radio" name="q4" value="1"> Acceleration</label><br>
+                <label><input type="radio" name="q4" value="2"> Displacement</label><br>
+                <label><input type="radio" name="q4" value="3"> Speed</label>
+            </div>
+            <button onclick="checkAnswer('q4', 0)">Submit</button>
+            <p class="explanation" id="explanation4">Explanation: The slope of a distance-time graph represents the velocity of the object.</p>
+        </div>
+
+        <div class="question" id="question5">
+            <p>5. Which of the following quantities is a vector?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="0"> Speed</label><br>
+                <label><input type="radio" name="q5" value="1"> Distance</label><br>
+                <label><input type="radio" name="q5" value="2"> Velocity</label><br>
+                <label><input type="radio" name="q5" value="3"> Time</label>
+            </div>
+            <button onclick="checkAnswer('q5', 2)">Submit</button>
+            <p class="explanation" id="explanation5">Explanation: Velocity is a vector quantity as it has both magnitude and direction.</p>
+        </div>
+
+        <div class="question" id="question6">
+            <p>6. An object moving with uniform acceleration has its velocity:</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="0"> Constant</label><br>
+                <label><input type="radio" name="q6" value="1"> Increasing</label><br>
+                <label><input type="radio" name="q6" value="2"> Decreasing</label><br>
+                <label><input type="radio" name="q6" value="3"> Random</label>
+            </div>
+            <button onclick="checkAnswer('q6', 1)">Submit</button>
+            <p class="explanation" id="explanation6">Explanation: In uniform acceleration, the velocity of the object is increasing at a constant rate.</p>
+        </div>
+
+        <div class="question" id="question7">
+            <p>7. The area under a velocity-time graph represents:</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="0"> Acceleration</label><br>
+                <label><input type="radio" name="q7" value="1"> Displacement</label><br>
+                <label><input type="radio" name="q7" value="2"> Velocity</label><br>
+                <label><input type="radio" name="q7" value="3"> Time</label>
+            </div>
+            <button onclick="checkAnswer('q7', 1)">Submit</button>
+            <p class="explanation" id="explanation7">Explanation: The area under a velocity-time graph represents the displacement of the object.</p>
+        </div>
+
+        <div class="question" id="question8">
+            <p>8. If an object travels equal distances in equal intervals of time, it is said to be:</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="0"> In uniform motion</label><br>
+                <label><input type="radio" name="q8" value="1"> In accelerated motion</label><br>
+                <label><input type="radio" name="q8" value="2"> In variable motion</label><br>
+                <label><input type="radio" name="q8" value="3"> At rest</label>
+            </div>
+            <button onclick="checkAnswer('q8', 0)">Submit</button>
+            <p class="explanation" id="explanation8">Explanation: An object is in uniform motion if it travels equal distances in equal intervals of time.</p>
+        </div>
+
+        <div class="question" id="question9">
+            <p>9. The initial velocity of an object is represented by:</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="0"> u</label><br>
+                <label><input type="radio" name="q9" value="1"> v</label><br>
+                <label><input type="radio" name="q9" value="2"> a</label><br>
+                <label><input type="radio" name="q9" value="3"> s</label>
+            </div>
+            <button onclick="checkAnswer('q9', 0)">Submit</button>
+            <p class="explanation" id="explanation9">Explanation: The initial velocity of an object is represented by the symbol "u".</p>
+        </div>
+
+        <div class="question" id="question10">
+            <p>10. What is the equation of motion for an object under uniform acceleration?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="0"> v = u + at</label><br>
+                <label><input type="radio" name="q10" value="1"> s = ut + 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q10" value="2"> v<sup>2</sup> = u<sup>2</sup> + 2as</label><br>
+                <label><input type="radio" name="q10" value="3"> All of the above</label>
+            </div>
+            <button onclick="checkAnswer('q10', 3)">Submit</button>
+            <p class="explanation" id="explanation10">Explanation: All three equations of motion apply to an object under uniform acceleration.</p>
+        </div>
+
+        <div class="question" id="question11">
+            <p>11. An object thrown vertically upwards will:</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="0"> Eventually come to rest</label><br>
+                <label><input type="radio" name="q11" value="1"> Move indefinitely upwards</label><br>
+                <label><input type="radio" name="q11" value="2"> Accelerate as it moves</label><br>
+                <label><input type="radio" name="q11" value="3"> Move horizontally</label>
+            </div>
+            <button onclick="checkAnswer('q11', 0)">Submit</button>
+            <p class="explanation" id="explanation11">Explanation: An object thrown upwards will eventually come to rest at its highest point due to the force of gravity.</p>
+        </div>
+
+        <div class="question" id="question12">
+            <p>12. The time taken to reach the maximum height of a projectile is:</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="0"> Equal to the time of descent</label><br>
+                <label><input type="radio" name="q12" value="1"> Half of the total time</label><br>
+                <label><input type="radio" name="q12" value="2"> Greater than the time of descent</label><br>
+                <label><input type="radio" name="q12" value="3"> Less than the time of descent</label>
+            </div>
+            <button onclick="checkAnswer('q12', 0)">Submit</button>
+            <p class="explanation" id="explanation12">Explanation: The time taken to reach maximum height is equal to the time taken to descend back to the original level.</p>
+        </div>
+
+        <div class="question" id="question13">
+            <p>13. The horizontal motion of a projectile is:</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="0"> Uniform</label><br>
+                <label><input type="radio" name="q13" value="1"> Non-uniform</label><br>
+                <label><input type="radio" name="q13" value="2"> Zero</label><br>
+                <label><input type="radio" name="q13" value="3"> Accelerated</label>
+            </div>
+            <button onclick="checkAnswer('q13', 0)">Submit</button>
+            <p class="explanation" id="explanation13">Explanation: The horizontal motion of a projectile is uniform since there is no horizontal acceleration.</p>
+        </div>
+
+        <div class="question" id="question14">
+            <p>14. What is the maximum height reached by a projectile?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="0"> Where vertical velocity becomes zero</label><br>
+                <label><input type="radio" name="q14" value="1"> When horizontal velocity is zero</label><br>
+                <label><input type="radio" name="q14" value="2"> Halfway in its trajectory</label><br>
+                <label><input type="radio" name="q14" value="3"> When it returns to the ground</label>
+            </div>
+            <button onclick="checkAnswer('q14', 0)">Submit</button>
+            <p class="explanation" id="explanation14">Explanation: The maximum height is reached when the vertical velocity becomes zero.</p>
+        </div>
+
+        <div class="question" id="question15">
+            <p>15. The term "displacement" refers to:</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="0"> The total path length</label><br>
+                <label><input type="radio" name="q15" value="1"> The straight line distance from the initial to the final position</label><br>
+                <label><input type="radio" name="q15" value="2"> The distance covered in a particular time</label><br>
+                <label><input type="radio" name="q15" value="3"> The distance minus the speed</label>
+            </div>
+            <button onclick="checkAnswer('q15', 1)">Submit</button>
+            <p class="explanation" id="explanation15">Explanation: Displacement refers to the straight-line distance from the initial to the final position, taking direction into account.</p>
+        </div>
+
+        <div class="question" id="question16">
+            <p>16. If an object is at rest, its velocity is:</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="0"> Zero</label><br>
+                <label><input type="radio" name="q16" value="1"> Constant</label><br>
+                <label><input type="radio" name="q16" value="2"> Increasing</label><br>
+                <label><input type="radio" name="q16" value="3"> Decreasing</label>
+            </div>
+            <button onclick="checkAnswer('q16', 0)">Submit</button>
+            <p class="explanation" id="explanation16">Explanation: If an object is at rest, its velocity is zero.</p>
+        </div>
+
+        <div class="question" id="question17">
+            <p>17. In projectile motion, the only force acting on the object is:</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="0"> Air resistance</label><br>
+                <label><input type="radio" name="q17" value="1"> Gravity</label><br>
+                <label><input type="radio" name="q17" value="2"> Tension</label><br>
+                <label><input type="radio" name="q17" value="3"> Friction</label>
+            </div>
+            <button onclick="checkAnswer('q17', 1)">Submit</button>
+            <p class="explanation" id="explanation17">Explanation: In projectile motion, the only force acting on the object is gravity.</p>
+        </div>
+
+        <div class="question" id="question18">
+            <p>18. The total time of flight of a projectile is determined by:</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="0"> Initial velocity</label><br>
+                <label><input type="radio" name="q18" value="1"> Angle of projection</label><br>
+                <label><input type="radio" name="q18" value="2"> Both initial velocity and angle of projection</label><br>
+                <label><input type="radio" name="q18" value="3"> The height reached</label>
+            </div>
+            <button onclick="checkAnswer('q18', 2)">Submit</button>
+            <p class="explanation" id="explanation18">Explanation: The total time of flight is determined by both the initial velocity and the angle of projection.</p>
+        </div>
+
+        <div class="question" id="question19">
+            <p>19. An object falls freely under the influence of gravity. Its acceleration is:</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="0"> Constant</label><br>
+                <label><input type="radio" name="q19" value="1"> Increasing</label><br>
+                <label><input type="radio" name="q19" value="2"> Decreasing</label><br>
+                <label><input type="radio" name="q19" value="3"> Zero</label>
+            </div>
+            <button onclick="checkAnswer('q19', 0)">Submit</button>
+            <p class="explanation" id="explanation19">Explanation: The acceleration of an object falling freely under the influence of gravity is constant (approximately 9.81 m/s<sup>2</sup>).</p>
+        </div>
+
+        <div class="question" id="question20">
+            <p>20. The distance traveled by an object under uniform acceleration is given by:</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="0"> s = ut + 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q20" value="1"> s = vt - 1/2 at<sup>2</sup></label><br>
+                <label><input type="radio" name="q20" value="2"> s = 1/2(v + u)t</label><br>
+                <label><input type="radio" name="q20" value="3"> All of the above</label>
+            </div>
+            <button onclick="checkAnswer('q20', 3)">Submit</button>
+            <p class="explanation" id="explanation20">Explanation: All three equations can be used to calculate the distance traveled by an object under uniform acceleration.</p>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(question, correctValue) {
+            const options = document.getElementsByName(question);
+            const explanation = document.getElementById("explanation" + question.slice(-2));
+            let selectedValue = -1;
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].checked) {
+                    selectedValue = options[i].value;
+                    break;
+                }
+            }
+            if (selectedValue == correctValue) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect. " + explanation.innerText);
+            }
+        }
+    </script>
+</body>
+</html>
+
+                <li><a href="mcq.html?subject=physics&chapter=electric_charges_and_fields">Electric Charges and Fields</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=electrostatic_potential_and_capacitance">Electrostatic Potential and Capacitance</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=current_electricity">Current Electricity</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=magnetic_effects_of_current_and_magnetism">Magnetic Effects of Current and Magnetism</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=electromagnetic_induction">Electromagnetic Induction</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=alternating_current">Alternating Current</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=electromagnetic_waves">Electromagnetic Waves</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=optics">Optics</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=dual_nature_of_matter_and_radiation">Dual Nature of Matter and Radiation</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=atoms_and_nuclei">Atoms and Nuclei</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=semiconductor_electronics">Semiconductor Electronics</a></li>
+                <li><a href="mcq.html?subject=physics&chapter=communication_systems">Communication Systems</a></li>
+                <li>
+                    <a href="mcq.html?subject=physics&chapter=units_and_dimensions">Units and Dimensions</a>
+                    <details>
+                        <summary>Questions</summary>
+                        <ul>
+                            <li>What is the SI unit of length?</li>
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .explanation {
+            display: none;
+            color: red;
+            margin-top: 10px;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEET Quiz</h1>
+    </header>
+
+    <section class="chapters">
+        <h2>Unit and Dimension</h2>
+        <div class="question" id="question1">
+            <p>1. What is the SI unit of force?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> Newton</label><br>
+                <label><input type="radio" name="q1" value="1"> Pascal</label><br>
+                <label><input type="radio" name="q1" value="2"> Joule</label><br>
+                <label><input type="radio" name="q1" value="3"> Watt</label>
+            </div>
+            <button onclick="checkAnswer('q1', 0)">Submit</button>
+            <p class="explanation" id="explanation1">Explanation: The SI unit of force is Newton (N).</p>
+        </div>
+        <!-- Add more questions similarly -->
+        
+        <div class="question" id="question2">
+            <p>2. What is the dimensional formula for velocity?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> [M L T<sup>-1</sup>]</label><br>
+                <label><input type="radio" name="q2" value="1"> [M<sup>-1</sup> L T<sup>2</sup>]</label><br>
+                <label><input type="radio" name="q2" value="2"> [M L<sup>2</sup> T<sup>-2</sup>]</label><br>
+                <label><input type="radio" name="q2" value="3"> [M L T<sup>2</sup>]</label>
+            </div>
+            <button onclick="checkAnswer('q2', 0)">Submit</button>
+            <p class="explanation" id="explanation2">Explanation: The dimensional formula for velocity is [M L T<sup>-1</sup>].</p>
+        </div>
+        <!-- Add more questions similarly -->
+
+        <div class="question" id="question20">
+            <p>20. What is the unit of energy?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="0"> Joule</label><br>
+                <label><input type="radio" name="q20" value="1"> Newton</label><br>
+                <label><input type="radio" name="q20" value="2"> Watt</label><br>
+                <label><input type="radio" name="q20" value="3"> Ampere</label>
+            </div>
+            <button onclick="checkAnswer('q20', 0)">Submit</button>
+            <p class="explanation" id="explanation20">Explanation: The SI unit of energy is Joule (J).</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NEET Practice Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function checkAnswer(questionId, correctAnswer) {
+            const options = document.getElementsByName(questionId);
+            let selectedAnswer = -1;
+
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].checked) {
+                    selectedAnswer = i;
+                    break;
+                }
+            }
+
+            const explanation = document.getElementById(`explanation${questionId.slice(-1)}`);
+            if (selectedAnswer === correctAnswer) {
+                explanation.textContent = "Correct! " + explanation.textContent;
+                explanation.style.color = "green";
+            } else {
+                explanation.textContent = "Incorrect! " + explanation.textContent;
+                explanation.style.color = "red";
+            }
+            explanation.classList.add("show");
+        }
+    </script>
+</body>
+</html>
+
+                          

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure styles.css is in the same directory -->
+    <title>NEET Physics Practice Portal</title>
+    <style>
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 1000;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>NEET Physics Practice Portal</h1>
+    <h2>Select a Chapter:</h2>
+
+    <ol>
+        <li><button onclick="showPopup('Kinematics')">Kinematics</button></li>
+        <li><button onclick="showPopup('Laws of Motion')">Laws of Motion</button></li>
+        <li><button onclick="showPopup('Work, Energy and Power')">Work, Energy and Power</button></li>
+        <li><button onclick="showPopup('System of Particles and Rotational Motion')">System of Particles and Rotational Motion</button></li>
+        <li><button onclick="showPopup('Gravitation')">Gravitation</button></li>
+        <li><button onclick="showPopup('Properties of Bulk Matter')">Properties of Bulk Matter</button></li>
+        <li><button onclick="showPopup('Thermodynamics')">Thermodynamics</button></li>
+        <li><button onclick="showPopup('Behaviour of Perfect Gas and Kinetic Theory')">Behaviour of Perfect Gas and Kinetic Theory</button></li>
+        <li><button onclick="showPopup('Oscillations')">Oscillations</button></li>
+        <li><button onclick="showPopup('Waves')">Waves</button></li>
+        <li><button onclick="showPopup('Electrostatics')">Electrostatics</button></li>
+        <li><button onclick="showPopup('Current Electricity')">Current Electricity</button></li>
+        <li><button onclick="showPopup('Magnetic Effects of Current and Magnetism')">Magnetic Effects of Current and Magnetism</button></li>
+        <li><button onclick="showPopup('Electromagnetic Induction and Alternating Currents')">Electromagnetic Induction and Alternating Currents</button></li>
+        <li><button onclick="showPopup('Electromagnetic Waves')">Electromagnetic Waves</button></li>
+        <li><button onclick="showPopup('Optics')">Optics</button></li>
+        <li><button onclick="showPopup('Dual Nature of Matter and Radiation')">Dual Nature of Matter and Radiation</button></li>
+        <li><button onclick="showPopup('Atoms and Nuclei')">Atoms and Nuclei</button></li>
+        <li><button onclick="showPopup('Electronic Devices')">Electronic Devices</button></li>
+    </ol>
+
+    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    <div class="popup" id="popup">
+        <h2 id="chapter-title"></h2>
+        <p>Click below to start the quiz for <span id="chapter-name"></span>.</p>
+        <a href="#" id="quiz-link"><button>Start Quiz</button></a>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
+    <script>
+        function showPopup(chapter) {
+            document.getElementById('chapter-title').innerText = 'Chapter: ' + chapter;
+            document.getElementById('chapter-name').innerText = chapter;
+            document.getElementById('quiz-link').setAttribute('href', chapter.toLowerCase().replace(/ /g, '-') + '.html'); // Adjust this as per your quiz URLs
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
